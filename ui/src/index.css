@@ -24,11 +24,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
+
 
 h1 {
   font-size: 3.2em;
@@ -93,4 +92,26 @@ button:hover {
   0% { transform: translate(0px, 0px); }
   50% { transform: translate(20px, -20px); }
   100% { transform: translate(0px, 0px); }
+}
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Checkmark line */
+div[style*="border: 6px solid #22c55e"]::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 38px;
+  width: 20px;
+  height: 10px;
+  border-left: 6px solid #22c55e;
+  border-bottom: 6px solid #22c55e;
+  transform: rotate(-45deg);
 }

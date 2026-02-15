@@ -67,7 +67,6 @@ const styles = {
     overflow: "hidden",
   },
 
-  /* Floating Blobs */
   blob1: {
     position: "absolute",
     width: "500px",
@@ -77,6 +76,8 @@ const styles = {
     left: "-150px",
     filter: "blur(120px)",
     animation: "float1 12s ease-in-out infinite",
+    zIndex: 0,
+    pointerEvents: "none",
   },
 
   blob2: {
@@ -88,6 +89,8 @@ const styles = {
     right: "-120px",
     filter: "blur(100px)",
     animation: "float2 15s ease-in-out infinite",
+    zIndex: 0,
+    pointerEvents: "none",
   },
 
   blob3: {
@@ -99,6 +102,8 @@ const styles = {
     left: "40%",
     filter: "blur(100px)",
     animation: "float3 18s ease-in-out infinite",
+    zIndex: 0,
+    pointerEvents: "none",
   },
 
   container: {
@@ -108,7 +113,6 @@ const styles = {
     zIndex: 2,
   },
 
-  /* Left Panel */
   leftPanel: {
     flex: 1,
     background:
@@ -136,7 +140,6 @@ const styles = {
     lineHeight: "1.6",
   },
 
-  /* Right Panel */
   rightPanel: {
     flex: 1,
     display: "flex",
@@ -154,6 +157,8 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     color: "white",
+    position: "relative",
+    zIndex: 3,
   },
 
   title: {
