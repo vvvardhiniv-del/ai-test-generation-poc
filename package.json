@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/vvvardhiniv-del/ai-test-generation-poc/issues"
   },
-  "homepage": "https://github.com/vvvardhiniv-del/ai-test-generation-poc#readme"
+  "homepage": "https://github.com/vvvardhiniv-del/ai-test-generation-poc#readme",
+  "dependencies": {
+    "react-router-dom": "^7.13.0"
+  }
 }
