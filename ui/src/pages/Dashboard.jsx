@@ -1,11 +1,24 @@
+import { useNavigate } from "react-router-dom";
+
 function Dashboard() {
+  const navigate = useNavigate();
+
   return (
     <div style={styles.container}>
       <div style={styles.card}>
         <h2>Dashboard</h2>
+
         <p data-testid="welcome-text">
-          Welcome to your application dashboard.
+          Welcome to your dashboard.
         </p>
+
+        <button
+          data-testid="go-to-create-project"
+          onClick={() => navigate("/create-project")}
+          style={styles.button}
+        >
+          Create New Project
+        </button>
       </div>
     </div>
   );
@@ -17,15 +30,19 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f4f6f9",
+    background: "#0f172a",
   },
   card: {
-    backgroundColor: "#ffffff",
+    background: "white",
     padding: "40px",
     borderRadius: "12px",
-    boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
     width: "400px",
     textAlign: "center",
+  },
+  button: {
+    marginTop: "20px",
+    padding: "10px",
+    cursor: "pointer",
   },
 };
 
