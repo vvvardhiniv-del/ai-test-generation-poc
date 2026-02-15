@@ -1,0 +1,15 @@
+# Environment files
+.env
+
+# Python virtual environment
+venv/
+
+# Node modules
+node_modules/
+
+# Generated tests (AI output)
+generated-tests/
+
+# OS files
+.DS_Store
+Thumbs.db
